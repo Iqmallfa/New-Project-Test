@@ -32,13 +32,8 @@ nav a {
   font-size: 22px;
 }
 
-.logo-link {
-  display: inline-flex;
-  align-items: center;
-}
-
 .logo {
-  width: 20px;
+  width: 24px;
   height: auto;
 }
 
