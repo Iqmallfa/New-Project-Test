@@ -1,20 +1,49 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
+  background-color: #FFFFFF;
   margin: 0;
 }
 
-.container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("background.jpg") no-repeat center/cover; /* opsional */
 }
 
+/* Navbar */
+nav {
+  padding: 16px 24px;
+}
+
+/* Container transparan */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+/* Card transparan + animasi */
 .card {
-  background: white;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: rgba(255, 255, 255, 0.1); /* transparan */
+  backdrop-filter: blur(8px); /* efek glass (opsional tapi keren) */
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+
+  /* animasi masuk dari kiri */
+  transform: translateX(-100px);
+  opacity: 0;
+  animation: slideIn 1.2s ease-out forwards;
+}
+
+/* Keyframes animasi */
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 nav {
