@@ -25,7 +25,7 @@ nav {
 
 /* Card transparan + animasi */
 .card {
-  background: rgba(255, 255, 255, 0.6); /* transparan */
+  background: rgba(0, 0, 0, 0.5); /* transparan */
   /* backdrop-filter: blur(8px);  efek glass (opsional tapi keren) */
   padding: 40px;
   border-radius: 16px;
