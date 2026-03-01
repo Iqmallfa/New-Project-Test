@@ -41,3 +41,9 @@ nav a {
   width: 20px;
   height: auto;
 }
+
+.logo-center {
+  width: 40px;   /* atur ukuran sesuai selera */
+  display: block;
+  margin: 0 auto;
+}
