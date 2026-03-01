@@ -1,72 +1,31 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f5f7fa;
-  margin: 0;
-}
-
-body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: url("background.jpg") no-repeat center/cover; /* opsional */
+  padding: 60px; /* biar ada jarak dari atas kiri */
 }
 
-/* Navbar */
-nav {
-  padding: 16px 24px;
+/* container teks */
+.content {
+  max-width: 600px;
 }
 
-/* Container transparan */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh;
+/* animasi umum */
+.content h1,
+.content p {
+  opacity: 0;
+  transform: translate(-40px, -40px);
+  animation: dropIn 0.8s ease-out forwards;
 }
 
-/* Card transparan + animasi */
-.card {
-  background: rgba(0, 0, 0, 0.5); /* transparan */
-  /* backdrop-filter: blur(8px);  efek glass (opsional tapi keren) */
-  padding: 40px;
-  border-radius: 16px;
-  text-align: center;
-  color: white;
-
-  /* animasi masuk dari kiri */
-  transform: translateX(-100px);
-  animation: slideIn 1.2s ease-out forwards;
+/* delay biar turun berurutan */
+.content p {
+  animation-delay: 0.3s;
 }
 
-/* Keyframes animasi */
-@keyframes slideIn {
+/* keyframes */
+@keyframes dropIn {
   to {
-    transform: translateX(0);
     opacity: 1;
+    transform: translate(0, 0);
   }
-}
-
-nav {
-  text-align: center;
-  padding: 15px;
-  background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-nav a {
-  text-decoration: none;
-  color: #2c3e50;
-  font-weight: bold;
-  margin: 0 15px;
-  font-size: 22px;
-}
-
-.logo {
-  width: auto;
-  height: auto;
-}
-
-.logo-center {
-  width: 40px;   /* atur ukuran sesuai selera */
-  display: block;
-  margin: 0 auto;
 }
