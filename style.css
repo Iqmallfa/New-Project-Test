@@ -34,7 +34,7 @@ nav {
 
   /* animasi masuk dari kiri */
   transform: translateX(-100px);
-  opacity: 0;
+  opacity: 0.6;
   animation: slideIn 1.2s ease-out forwards;
 }
 
